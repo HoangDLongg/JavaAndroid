@@ -109,7 +109,7 @@ class ClassTLU {
     }
 }
 
-public class b1 {
+public class oppJava {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<ClassTLU> dsLop = new ArrayList<>();
