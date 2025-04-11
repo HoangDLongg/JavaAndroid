@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Movies FREE"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+
+            <!-- Avatar Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/profile"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="User Avatar" />
+
+                <Button
+                    android:id="@+id/selectAvatarBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/red_bg"
+                    android:text="Chọn Avatar"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_account_circle_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Tên người dùng"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="@color/white" />
+
+            <!-- Ngày sinh -->
+            <EditText
+                android:id="@+id/date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_calendar_today_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Ngày sinh (dd/MM/yyyy)"
+                android:inputType="date"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <!-- Địa chỉ (Thành phố) -->
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_add_location_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Thành phố"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+                <EditText
+                    android:id="@+id/pass1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:padding="20dp"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/toggle_pass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/visibility_on"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+                <EditText
+                    android:id="@+id/pass2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Xác nhận mật khẩu"
+                    android:inputType="textPassword"
+                    android:padding="20dp"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/toggle_pass2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/visibility_on"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startBtn"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@drawable/red_bg"
+                android:text="Đăng Ký"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

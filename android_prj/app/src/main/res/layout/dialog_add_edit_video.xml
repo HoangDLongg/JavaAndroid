@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/main_color">
+
+    <EditText
+        android:id="@+id/etVideoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ID video (ví dụ: lilo_stitch_trailer)"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etVideoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề video"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etVideoId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etVideoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả video"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etVideoTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etVideoUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL video"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etVideoDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etThumbnailUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL thumbnail"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etVideoUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etThumbnailUrl"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etThumbnailUrl"
+        app:layout_constraintEnd_toStartOf="@id/btnSaveVideo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

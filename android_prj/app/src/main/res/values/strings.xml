@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="signup">Bạn đã có tài khoản rồi? <font color="#dc6f31">Đăng nhập</font></string>
+    <string name="signin">Bạn đã có tài khoản chưa? <font color="#dc6f31">Đăng ký</font></string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/dark_blue_bg"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvVideoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Video Title"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEditVideo" />
+
+    <TextView
+        android:id="@+id/tvVideoDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Video Description"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvVideoTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEditVideo" />
+
+    <Button
+        android:id="@+id/btnEditVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDeleteVideo" />
+
+    <Button
+        android:id="@+id/btnDeleteVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

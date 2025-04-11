@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/main_color">
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tên: N/A"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email: N/A"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dob_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ngày sinh: N/A"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/city_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thành phố: N/A"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- Nút chỉnh sửa thông tin -->
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/red_bg"
+        android:text="Chỉnh sửa thông tin"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Nút đổi mật khẩu -->
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/red_bg"
+        android:text="Đổi mật khẩu"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Nút đổi tài khoản -->
+    <Button
+        android:id="@+id/btn_switch_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/red_bg"
+        android:text="Đổi tài khoản"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

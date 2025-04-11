@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "707970307438",
+    "firebase_url": "https://android-login-1e3af-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "android-login-1e3af",
+    "storage_bucket": "android-login-1e3af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707970307438:android:adcffad9069148c840dd7f",
+        "android_client_info": {
+          "package_name": "com.hoanglong171.movies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPdElZXcT5KnthowS5a2AAI1uWxURRXvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

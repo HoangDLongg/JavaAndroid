@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/main_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thông tin"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background" />
+
+    <Button
+        android:id="@+id/btn_select_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/red_bg"
+        android:text="Chọn Avatar"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="8dp"
+        android:hint="Tên người dùng"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/edit_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:drawablePadding="8dp"
+        android:hint="Ngày sinh (dd/MM/yyyy)"
+        android:inputType="date"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/edit_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_add_location_24"
+        android:drawablePadding="8dp"
+        android:hint="Thành phố"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/red_bg"
+        android:text="Lưu thay đổi"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
